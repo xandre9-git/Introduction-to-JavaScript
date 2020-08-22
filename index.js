@@ -9,29 +9,39 @@ console.log(votingAge < 18);
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
+// let dynamic = 'anything';
+// if ()
+// let final = 'nothing';
 
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
-
-
+console.log(Number('1999'))
 
 
 //Task d: Write a function to multiply a*b 
 
+function numMulti(a, b) {
+    return a * b;               // place return infront of variables you would like to compute
+}
 
-
-
+console.log(numMulti(1,5))
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
+// 1 year = 7 years in dogs
 
+// 36 * 7 = 252
 
+function dogYears(myage) {
+    return myage * 7;
+}
 
+console.log(dogYears(36))
 
 /************************************************************** Task 3 **************************************************************/
 //Dog feeder 
