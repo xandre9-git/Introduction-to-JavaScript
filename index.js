@@ -105,6 +105,8 @@ console.log(dogFeeder(5, 0.5));
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
+var myChoice = prompt("Rock, paper, or scissors?");
+
 function rps (myChoice) {
     let cpuRandom = Math.floor(Math.random() * Math.floor(3))
 
@@ -149,12 +151,10 @@ function rps (myChoice) {
                                 console.log("You: Scissors");
                                 return "You win."
                             }
-
-            // else (myChoice == "scissors" && cpuRandom == "paper") )
-            //     console.log()
-
+                     
 }
 
+rps()
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
@@ -200,8 +200,31 @@ annoyingSong()
 //70s should be Cs 
 //60s should be D 
 //and anything below 60 should be F
-  
 
+
+function gradeCalc(num) {
+    if (num >= 90){
+        return "A";
+    }
+        else if (num >= 80) {
+            return "B"; 
+        }
+        else if (num >= 70) {
+            return "C";
+        }
+        else if (num >= 60) {
+            return "D";
+        }
+        else if (num < 60) {
+            return "F";
+        }
+            else {
+                return "Please enter a number."
+            }
+    
+}
+  
+console.log(gradeCalc(79))
   
   
 
@@ -210,8 +233,14 @@ annoyingSong()
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
+// let vowels = ["a","e","i","o","u","A","E","I","O","U"]
 
+// function vowelCounter (str) {    
+//     // return str.length
+//     str.include()
+// }   
 
+// console.log(vowelCounter("What the....?"))
 
 
 /************************************************************** Stretch **************************************************************/
