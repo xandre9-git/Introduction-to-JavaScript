@@ -170,9 +170,13 @@ console.log(convertToMiles(1));
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
+// 1 FT = 30.48 
 
+function convertToCM(num1) {
+    return num1 = num1 * 30.48;
+}
 
-
+console.log(convertToCM(2));
 
 /************************************************************** Task 6 **************************************************************/
 // 99 bottles of soda on the wall
