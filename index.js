@@ -9,10 +9,15 @@ console.log(votingAge < 18);
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
-// let dynamic = 'anything';
-// if ()
-// let final = 'nothing';
 
+let a = 100;
+let b = 50;
+if (a > b) {
+    a = a - b;
+}
+else {
+    a = a + b;
+}
 
 
 
@@ -89,7 +94,7 @@ function dogFeeder(pounds, age) {
     }
 }
   
-console.log(dogFeeder(5, 0.75));
+console.log(dogFeeder(5, 0.5));
 
 
 
@@ -100,14 +105,62 @@ console.log(dogFeeder(5, 0.75));
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
+function rps (myChoice) {
+    let cpuRandom = Math.floor(Math.random() * Math.floor(3))
 
+    if (cpuRandom === 0){
+        cpuRandom = "rock";
+        console.log("Computer: Rock");
+    }
+        else if (cpuRandom === 1){
+            cpuRandom = "paper";
+            console.log("Computer: Paper");
+        }
+            else {
+                cpuRandom = "scissors";
+                console.log("Computer: Scissors");
+            }
+    
+    if (myChoice  === cpuRandom) {
+        console.log("You: " + myChoice)
+        return "Tie.";
+    }
+        else if (myChoice == "rock" && cpuRandom == "paper") {
+            console.log("You: Rock");
+            return "You lose.";
+        }   
+            else if (myChoice === "rock" && cpuRandom == "scissors") {
+                console.log("You: Rock");
+                return "You win.";
+            }   
+                else if (myChoice === "paper" && cpuRandom == "scissors") {
+                    console.log("You: Paper")
+                    return "You lose.";
+                }
+                    else if (myChoice === "paper" && cpuRandom == "rock") {
+                        console.log("You: Paper");
+                        return "You win.";
+                    }
+                        else if (myChoice === "scissors" && cpuRandom === "rock") {
+                            console.log("You: Scissors")
+                            return "You lose.";
+                        }
+                            else {
+                                console.log("You: Scissors");
+                                return "You win."
+                            }
 
-  
-  
+            // else (myChoice == "scissors" && cpuRandom == "paper") )
+            //     console.log()
+
+}
+
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
+
+// 1 KM = 0.621371 Mile
 
 
 
