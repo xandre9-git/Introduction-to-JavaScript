@@ -162,9 +162,11 @@ function rps (myChoice) {
 
 // 1 KM = 0.621371 Mile
 
+function convertToMiles(num1) {
+    return num1 = num1 * 0.621371; 
+}
 
-
-
+console.log(convertToMiles(1));
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
