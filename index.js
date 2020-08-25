@@ -94,7 +94,7 @@ function dogFeeder(pounds, age) {
     }
 }
   
-console.log(dogFeeder(5, 0.5));
+console.log(dogFeeder(15, 1));
 
 
 
@@ -105,7 +105,9 @@ console.log(dogFeeder(5, 0.5));
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-var myChoice = prompt("Rock, paper, or scissors?");
+// var myChoice = prompt("Rock, paper, or scissors?");
+
+let myChoice
 
 function rps (myChoice) {
     let cpuRandom = Math.floor(Math.random() * Math.floor(3))
@@ -125,36 +127,37 @@ function rps (myChoice) {
     
     if (myChoice  === cpuRandom) {
         console.log("You: " + myChoice)
-        return "Tie.";
+        console.log("Tie.");
     }
-        else if (myChoice == "rock" && cpuRandom == "paper") {
+        else if (myChoice === "rock" && cpuRandom === "paper") {
             console.log("You: Rock");
-            return "You lose.";
+            console.log("You lose.");
         }   
-            else if (myChoice === "rock" && cpuRandom == "scissors") {
+            else if (myChoice === "rock" && cpuRandom === "scissors") {
                 console.log("You: Rock");
-                return "You win.";
+                console.log("You win.");
             }   
-                else if (myChoice === "paper" && cpuRandom == "scissors") {
+                else if (myChoice === "paper" && cpuRandom === "scissors") {
                     console.log("You: Paper")
-                    return "You lose.";
+                    console.log("You lose.");
                 }
-                    else if (myChoice === "paper" && cpuRandom == "rock") {
+                    else if (myChoice === "paper" && cpuRandom === "rock") {
                         console.log("You: Paper");
-                        return "You win.";
+                        console.log("You win.");
                     }
                         else if (myChoice === "scissors" && cpuRandom === "rock") {
                             console.log("You: Scissors")
-                            return "You lose.";
+                            console.log("You lose.");
                         }
                             else {
                                 console.log("You: Scissors");
-                                return "You win."
+                                console.log("You win.");
                             }
                      
 }
 
 rps()
+
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
@@ -233,14 +236,25 @@ console.log(gradeCalc(79))
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
-// let vowels = ["a","e","i","o","u","A","E","I","O","U"]
+let vowels = ["a","e","i","o","u","A","E","I","O","U"]
+let str = ""
 
-// function vowelCounter (str) {    
-//     // return str.length
-//     str.include()
-// }   
 
-// console.log(vowelCounter("What the....?"))
+numofvowels = 0
+
+function countVowels(str) {
+for (i = 0; i < vowels.length; i++)  
+    if (vowels.includes(str[i])) {
+        numofvowels++
+    }
+
+    return numofvowels
+  
+}
+    
+
+  
+console.log(countVowels("Tested"))
 
 
 /************************************************************** Stretch **************************************************************/
